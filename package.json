@@ -1,0 +1,28 @@
+{
+  "name": "google_actions_tutorial",
+  "version": "0.0.1",
+  "author": "Shaheer Majeed",
+  "scripts": {
+    "lint": "semistandard \"**/*.js\"",
+    "start": "functions deploy google_actions_tutorial --trigger-http",
+    "deploy": "gcloud beta functions deploy google_actions_tutorial --trigger-http --stage-bucket shaheer_ga_tutorial",
+    "test": "npm run lint"
+  },
+  "semistandard": {
+    "globals": [
+      "after",
+      "afterEach",
+      "before",
+      "beforeEach",
+      "describe",
+      "it"
+    ]
+  },
+  "dependencies": {
+    "sprintf-js": "^1.0.3",
+    "actions-on-google": "^1.0.0"
+  },
+  "devDependencies": {
+    "semistandard": "^9.1.0"
+  }
+}
